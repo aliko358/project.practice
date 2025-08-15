@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+      .sosial{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+      .sos{
+        width: 30px;
+        margin: 5px;
+        transition: .3s;
+      }
+      .sos:hover{
+        scale: 1.2;
+      }
+      .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .amg{
+        font-family: 'Courier New', Courier, monospace;
+        color: #ff0000;
+        text-shadow: 3px 3px 3px black;
+        animation: soldan 2s esase-in-out alternate;
+      }
+
+      @keyframes soldan{
+        0%{
+          transform: translateY(-100%);
+        }
+        100%{
+          transform: translateY(0);
+        }
+      }
+    </style>
 </head>
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
   <div class="container-fluid">
@@ -22,7 +59,8 @@
     </div>
   </div>
 </nav>
-<div id="haqqinda" class="carousel slide container mt-3">
+<div id="haqqinda" class="carousel slide container mt-3"
+data-bs-ride="carousel" data-bs-interval="2000">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="socar1.png" class="d-block w-100" alt="...">
@@ -44,56 +82,123 @@
   </button>
 </div>
 <br>
-<div class="card-group" id="fealiyyet">
-  <div class="card">
-    <img src="socar4.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Heydər Əliyev adına NEZ-in yenidənqurma və modernizasiyası</h5>
-      <p class="card-text">Ölkəmizin yanacaq istehsalı sektorunun ən iri və qabaqcıl müəssisəsi olan Heydər Əliyev adına Neft Emalı Zavodu (NEZ) 1953-cü ildə yaradılıb. 2004-cü ildə NEZ-in 50 illik yubileyi münasibətilə ümummilli lider Heydər Əliyevin adını daşımağa başlayıb.
+<div class="accordion accordion-flush" id="layihe">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Heydər Əliyev adına NEZ-in yenidənqurma və modernizasiyası
+
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Ölkəmizin yanacaq istehsalı sektorunun ən iri və qabaqcıl müəssisəsi olan Heydər Əliyev adına Neft Emalı Zavodu (NEZ) 1953-cü ildə yaradılıb. 2004-cü ildə NEZ-in 50 illik yubileyi münasibətilə ümummilli lider Heydər Əliyevin adını daşımağa başlayıb.
 
 NEZ benzin, aviasiya kerosini, dizel yanacağı, neft koksu, mazut və digər neft məhsulları istehsal edərək daxili bazarın tələbatının əsas hissəsini ödəyir. Zavodun istehsal etdiyi məhsulun 10%-i xarici bazarlara satılır.
 
-Daxili və xarici bazarın artan tələbatı ilə əlaqədar NEZ-in istehsal gücünün artırılması, bazarın “AVRO-5” standartına uyğun olan yüksək keyfiyyətli yanacaqla təmin edilməsi, “Azərikimya” İB-nin xammala olan tələbatının ödənilməsi, eləcə də neft məhsullarının ixrac potensialının yüksəldilməsi məqsədilə zavodun yenidən qurulması və modernizasiyası layihəsi həyata keçirilir.
-Mərhələli şəkildə həyata keçirilən layihə yeni qurğuların quraşdırılmasını, bəzi qurğuların rekonstruksiya olunmasını, eləcə də mühəndis kommunikasiya qurğularının modenizasiyasını özündə cəmləşdirir. Birinci mərhələdə yeni Bitum qurğusu inşa olunub, “PEN 40-60” markalı yüksək keyfiyyətli bitumun illik istehsal imkanları 250 min tondan 400 min tona qaldırılıb və ölkədaxili tələbat tam təmin olunmağa başlanıb. Qeyd edək ki, bitum binaların tikilməsi, yolların və boruların salınması, asfalt, boya, lak və kabel istehsalında istifadə olunur.
+Daxili və xarici bazarın artan tələbatı ilə əlaqədar NEZ-in istehsal gücünün artırılması, bazarın “AVRO-5” standartına uyğun olan yüksək keyfiyyətli yanacaqla təmin edilməsi, “Azərikimya” İB-nin xammala olan tələbatının ödənilməsi, eləcə də neft məhsullarının ixrac potensialının yüksəldilməsi məqsədilə zavodun yenidən qurulması və modernizasiyası layihəsi həyata keçirilir.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Heydər Əliyev adına NEZ-in yenidənqurma və modernizasiyası
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Mərhələli şəkildə həyata keçirilən layihə yeni qurğuların quraşdırılmasını, bəzi qurğuların rekonstruksiya olunmasını, eləcə də mühəndis kommunikasiya qurğularının modenizasiyasını özündə cəmləşdirir. Birinci mərhələdə yeni Bitum qurğusu inşa olunub, “PEN 40-60” markalı yüksək keyfiyyətli bitumun illik istehsal imkanları 250 min tondan 400 min tona qaldırılıb və ölkədaxili tələbat tam təmin olunmağa başlanıb. Qeyd edək ki, bitum binaların tikilməsi, yolların və boruların salınması, asfalt, boya, lak və kabel istehsalında istifadə olunur.
 
 Birinci mərhələnin başa çatdırılması ilə NEZ “Azərikimya” İB-nin Buxar krekinq qurğusunu ilkin xammalla təchiz etmək imkanı qazanıb ki, bu da SOCAR-ın polimer zavodlarında etilen və propilenin polimerləri istehsalının səmərəliliyini yüksəldib. Birinci mərhələ çərçivəsində həm də 7 avtoçən və 5 çəndən ibarət yeni maye-qaz (LPG) doldurma məntəqəsi istismara buraxılıb. Bu çənlər vaqon vasitəsilə il ərzində “Azərikimya” üçün xammal sayılan 180 min ton propan-propilen, 100 min ton maye qaz və boru vasitəsilə 178 min ton butan-butilen fraksiyasının daşınmasını (dəmir yolu ilə də) mümkün edir.
 
-Modernizasiya və yenidənqurma layihəsinin növbəti mərhələsi dizel və benzin yanacağının “AVRO-5” standartına uyğun istehsalını nəzərdə tutur. Hər iki yanacağın keyfiyyət və məhsuldarlığının artırılması məqsədilə yeni qurğular quraşdırılır. Ümumilikdə, 19 yeni qurğu (Hidrogenin zənginləşdirilməsi, Dizel hidrotəmizlənmə, Hidrogen istehsalı, İzomerləşmə, Nafta ayırıcı, Deminerallaşdırılmış su və kondensatın alınması, Qazan suyu və buxar istehsalı, Kükürdün istehsalı, Turş suların təmizlənməsi, C4 hidrogenləşmə, Metil-tert-butil efirinin (MTBE) istehsalı, Çirkab suların təmizlənməsi, Azot istehsalı, Katalitik krekinq benzininin hidrotəmizlənməsi, Aminin regenerasiyası, Maye qazın ilkin təmizlənməsi, Maye qazın qələvi məhlulu ilə təmizlənməsi qurğuları, Maye qazlar parkı və Soyutma suyu qülləsi) inşa edilib istismara veriləcək.
-Layihənin inkişafında hazırkı mərhələ başa çatdıqdan sonra NEZ-də 22 əsas texnoloji qurğu fəaliyyət göstərəcək. Ümumzavod təsərrüfatı və infrastrukturun yarısından çoxu (70%) tam modernizasiya olunacaq. Bundan əlavə, çirkab suların təmizlənməsi sahəsi və yeni məşəl sisteminin tikilməsi nəticəsində ətraf mühitə mənfi təsirlər azalacaq. Yeni laboratoriya, elektrik yarımstansiyaları, boru kəmərləri, kabel xətləri və çənlər parkının inşa edilib istismara verilməsi nəzərdə tutulur.
-
-Sözügedən layihənin tam həyata keçirilməsi Azərbaycanın növbəti 15-20 il ərzində yanacağa olan tələbatını ödəməyə və ölkənin ixrac potensialının artırılmasına imkan verəcək. Layihənin tamamlanması ilə NEZ-in istismar xərcləri optimallaşdırılacaq. Ətraf mühitlə bağlı bir sıra müsbət məqamlar da gözlənilir. Belə ki, “AVRO-5” standartına keçdikdən sonra avto nəqliyyatlardan çıxan emissiyalar, eləcə də istixana qazlarının emissiyaları əhəmiyyətli dərəcədə azalacaq.
-
-</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-body-secondary">Last updated 3 mins ago</small>
+</div>
     </div>
   </div>
-  <div class="card">
-    <img src="socar5.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Azərikimya" İB-nin yenidənqurma və modernizasiyası</h5>
-      <p class="card-text">Azərbaycan Respublikası Prezidentinin 2014-cü il 26 dekabr tarixli Sərəncamı ilə təsdiq edilmiş “Azərbaycan Respublikasında sənayenin inkişafına dair 2015-2020-ci illər üçün Dövlət Proqramı”na əsasən, 2016-cı ildən etibarən “Azərikimya” İB-nin Etilen-polietilen zavodunun “EP-300” qurğusunda modernizasiya işlərinə start verilib. Modernizasiya layihəsinin əsas məqsədlərindən biri Sumqayıt Kimya Sənaye Parkında “SOCAR-Polymer” layihəsi çərçivəsində inşa edilmiş yeni polipropilen və yüksək sıxlıqlı polietilen istehsalı qurğularını dayanıqlı olaraq müvafiq keyfiyyət və kəmiyyət göstəricilərinə uyğun etilen, propilen, saf hidrogen və enerjidaşıyıcılarla təmin etmək olub. 2021-ci ilin dekabr ayında modernizasiya və yenidənqurma layihələri uğurla başa çatıb.
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        "Azərikimya" İB-nin yenidənqurma və modernizasiyası
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Azərbaycan Respublikası Prezidentinin 2014-cü il 26 dekabr tarixli Sərəncamı ilə təsdiq edilmiş “Azərbaycan Respublikasında sənayenin inkişafına dair 2015-2020-ci illər üçün Dövlət Proqramı”na əsasən, 2016-cı ildən etibarən “Azərikimya” İB-nin Etilen-polietilen zavodunun “EP-300” qurğusunda modernizasiya işlərinə start verilib. Modernizasiya layihəsinin əsas məqsədlərindən biri Sumqayıt Kimya Sənaye Parkında “SOCAR-Polymer” layihəsi çərçivəsində inşa edilmiş yeni polipropilen və yüksək sıxlıqlı polietilen istehsalı qurğularını dayanıqlı olaraq müvafiq keyfiyyət və kəmiyyət göstəricilərinə uyğun etilen, propilen, saf hidrogen və enerjidaşıyıcılarla təmin etmək olub. 2021-ci ilin dekabr ayında modernizasiya və yenidənqurma layihələri uğurla başa çatıb.
 
-“Azərikimya” İB-də istehsal üçün istifadə olunan xammallar birbaşa SOCAR-ın Heydər Əliyev adına Neft Emalı Zavodundan təchiz edilir. Beləliklə, Sumqayıtdakı “Azərikimya” İB-nin Etilen-polietilen zavodu SOCAR-ın dəyər zəncirinin mərkəzində qərarlaşır və xam neftin çıxarılmasından polimerlərin istehsalına qədər uzanan zəncirin əsas və ən önəmli həlqələrindən birini təşkil edir.
-
-Layihə çərçivəsində, ümumilikdə zavodun müxtəlif xidmət sahələri üzrə (NÖC və A, elektriki, mexaniki, texnoloji və s.) qurğu və avadanlıqları mərhələli şəkildə istismara verilib ki, bunun da nəticəsində orta hesabla gündəlik xammalın emal həcmi 2500 tona qaldırılıb. Zavodda əsas məqsədli və digər məhsullar üzrə faktiki istehsal həcmi artıb. Gündəlik istehsal olunan əsas məqsədli məhsulların istehsalı - etilen üzrə 630, propilen üzrə isə 550 tona çatdırılıb.
-
-Lahiyə üzrə yeni anbarlar, hidrogenin zənginləşdirilməsi qurğusu, propan-propilen fraksiya­ları qurğuları, 4 ədəd yeni piroliz sobası, M-4 turbokompressoru, etan-etilen və propan-propilen fraksiyalarının selektiv hidrogenləşməsi reaktorları, metan-hidrogen fraksiyasının etilendən təmizlənməsi kalonu, soyuq blokda hidrogenin karbon monooksiddən təmizlənməsi və müxtəlif tipli (yüksək sürət, qapalı tipli və xüsusi tores sistemli) nasoslar işə qoşulub. Metrologiya üzrə DCS, ESD sistemləri və sahə cihazlarının funksional sinaqları yerinə yetirilib, 2020-ci ilin sentyabr-oktyabr aylarında əsaslı təmir zamanı modernizasiya və yenidənqurma layihəsi çərçivəsində inşa olunan qurğu və avadanlıqların bəziləri mövcud “EP-300” qurğusuna birləşdirilib və zavodun yüksək məhsuldarlıqla istismarına başlanılıb.
-
-Hazırda Quru qaz fraksiyasının kükürdlü birləşmələr və mikro qarışıqlardan təmizlənməsi qurğusu istismara hazırlanır.
-Məhsuldarlığı 15 ton/saat olan butilen-butadien (C4) fraksiyalarının hidrogenləşdirilməsi qurğusunun 2020-ci ilin proqnoz tapşırığına və istehsala uyğun olaraq məhsuldarlığının 25 ton/saata çatdırılması zərurəti yarandığından qurğuda ikinci reaktorun paralel işlədilməsi üçün texnoloji sxem quraşdırılıb. Qurğu işə qoşulduqdan sonra NEZ-dən qəbul edilən gündəlik 500 ton texniki butanın hidrogenləşməsindən təxminən 60 ton əlavə etilenin alınması nəzərdə tutulur. Eyni zamanda, NEZ-dən qəbul edilən texniki butanın köhnə C3 qurğusunda nəmlikdən təmizlənməsi layihəsi də işlənib, işə qoşulması üçün də hazırlıq işləri görülür.
-
-Yaxın 20 il ərzində Etilen-Polietilen zavodunun istismar olunacağı nəzərə alınaraq, dövri su sistemində soyutmanın effektivliyinin artırılması üçün yeni Susoyutma qurğusunda 4 ədəd əlavə seksiyanın (qüllənin) tikintisi həyata keçirilib.
-
-Əlavə olaraq, Yüksək Gərginlikli L-38 yarımstansiyasının Etilen istehsalatı ərazisinə köçürülməsi işləri tamamlanıb. Yeni yarımstansiyanın layihələndirilməsi və quraşdırılması ilə müasir rəqəmsal texnologiyaların tətbiq edilməsi, yeni nəsil avadanlıqlardan istifadə olunması, istehsalat sahələrinin etibarlı və dayanıqlı elektrik enerjisi ilə təmin olunması nəzərdə tutulur.
-
-Etilen-Politen zavodunun Etilen istehsalatında texnoloji problemlər yarandığı təqdirdə “SOCAR Polymer”ə hidrogen qazının fasiləsiz nəqli, həmçinin balonlarda zavoddaxili ehtiyatın yaradılması məqsədilə yeni “Hidrogen məhsulunun ehtiyat saxlanması anbarı”nın tikintisi başa çatıb və istismara hazırlanır.
-
-SOCAR ilə Almaniyanın “Uniper” (EON) şirkəti tərəfindən yaradılan “SOCAR-Uniper” birgə müəssisəsi Etilen-polietilen zavodunda Buxar Generator Kompleksini təmilləşdirərək enerji effektivliyinin 32 Mvt.s-dən 68 Mvt.s-yə çatdırılması layihəsini tamamlayıb. Quraşdırılan turbogenerator “Azərikimya”nın Sumqayıt Elektrik Şəbəkəsindən aldığı elektrik enerjisi tələbatını tam ödəməklə yanaşı, istehsal olunacaq artıq elektrik enerjisini SOCAR-ın və Sumqayıt şəhərinin digər müəssisələrinə ötürməsinin həyata keçirilməsini nəzərdə tutur. Aparılan modernizasiya işləri nəticəsində zavodun propilen üzrə illik məhsuldarlığı 90-100 min tondan 187 min tona, etilen üzrə illik məhsuldarlığı isə 100-120 min tondan 192 min tona qaldırılıb.</p>
+“Azərikimya” İB-də istehsal üçün istifadə olunan xammallar birbaşa SOCAR-ın Heydər Əliyev adına Neft Emalı Zavodundan təchiz edilir. Beləliklə, Sumqayıtdakı “Azərikimya” İB-nin Etilen-polietilen zavodu SOCAR-ın dəyər zəncirinin mərkəzində qərarlaşır və xam neftin çıxarılmasından polimerlərin istehsalına qədər uzanan zəncirin əsas və ən önəmli həlqələrindən birini təşkil edir.</div>
     </div>
-    
+  </div>
 </div>
+<div class="container" style="scroll-margin-top: 50px;" id="fealiyyet">
+  <div class="col">
+    <div class="card">
+      <img src="socar4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kəşfiyyat/Qazma</h5>
+        <p class="card-text">
+          Yerin dərin qatlarında qiymətli sərvətlər, o cümlədən zəngin neft-qaz yataqları mövcuddur. Yer səthinə yaxın yerləşən bir çox yataqlar artıq istismara verilib, onlardan bəziləri isə tükənmək üzrədir. Bu səbəbdən, xüsusilə dərin qatlardakı yataqların aşkarlanması və onların hasilat prosesi üçün işlənilməsi (quyuların qazılması və s.) labüddür. Bu da böyük vəsait, habelə illərlə vaxt tələb edir. Kəşfiyyat karbohidrogenlərin axtarışı və yataqların işlənməsini əhatə edən enerji istehsalının ilkin mərhələsini təşkil edir. Axtarışlar əvvəllər ənənəvi olaraq quyu qazmaq üsulu ilə aparılırdısa, hazırda geofiziki-kəşfiyyat metodları (maqnit, qravimetrik, elektrik, seysmik, radioaktivlik) ilə əvəz edilib. Bu da kəşfiyyat axtarış işlərinə xeyli vəsait və vaxtın qənaət olunmasına imkan verir. Dərinlikdə yerləşən neft və ya qaz yataqları əvvəlcə maqnit, qravimetrik və ya elektrik üsulları ilə aşkar olunur, sonra isə potensial cəhətdən daha əlverişli sahədə dəqiq seysmik tədqiqatlar aparılır. Seysmik tədqiqat üsulu elastik dalğaları partlayışlarla və ya yerə vurma qurğuları ilə yaradılır. Yerin 5-10 km-lik dərinliklərində olan alt laylarından əks olunan dalğalar müəyyən sahənin struktur quruluşunun bəzi hissələrini təyin etməyə imkan verir.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="socar5.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nəql</h5>
+        <p class="card-text">Nəql (midstrim) neft-qaz sektorunda fəaliyyət göstərən hər bir şirkət üçün biznes əməliyyatlarının arteriyası rolunu oynayır. Nəql özündə karbohidrogenlərin xarici bazarlara çıxarılması üçün ucuz nəqliyyat növü sayılan boru kəmərlərindən başqa, onların terminallara daşınması və saxlanmasını, xammalın emal zavodlarına boru, dəmir, dəniz (tankerlərlə) yolu kimi nəqliyyat vasitələri ilə çatdırılmasını və ya ölkənin qazpaylayıcı şəbəkəsini cəmləşdirir.
+
+Azərbaycanın dövlət müstəqilliyi dövründə SOCAR qısa müddətdə ölkə daxilində və xaricdə regional və qlobal enerji layihələri həyata keçirməklə çoxlu sayda boru kəmərləri inşa edərək, istismara verib. “Əsrin müqaviləsi” imzalandıqdan sonra, ilk tikilən boru kəmərlərindən biri olan Bakı‐Novorossiysk 1997-ci ildə tam tikilib istifadəyə verilib. 1996-cı ildə Azərbaycan və Gürcüstan arasında imzalanmış sazişə əsasən tikilməyə başlanan Qərb İxrac Boru Kəməri və ya Bakı-Supsa kəmərinin inşası 1998-ci ildə başa çatdırılıb. Bakı-Tbilisi-Ceyhan (BTC) əsas ixrac neft boru kəməri Azərbaycan neftinin xarici bazara birbaşa çıxışını təmin edib. 2007-ci ildə tikilən Cənubi Qafqaz Boru Kəmərinin (CQBK) genişləndirilməsi ilə “Şahdəniz” yatağından hasil olunan təbii qazın Gürcüstan və Türkiyə bazarlarına daşınması həyata keçirilib. “Şahdəniz 2” layihəsi çərçivəsində Azərbaycan qazının Türkiyə və Avropa ölkələrinə nəql edilməsi məqsədilə Trans-Anadolu (TANAP) və Trans-Adriatik (TAP) qaz boru kəmərlərinin inşası həyata keçirilib. Bununla da, Avropa ölkələrinin uzunmüddətli enerji təhlükəsizliyinə töhfə verilib, alternativ marşrutların şaxələndirilməsi və rəqabətli enerji bazarının yaradılması təmin olunub. Bu kəmərlər birlikdə 3500 km uzunluqda olan, Avropa və Asiya qitələrini birləşdirən Cənub Qaz Dəhlizini təşkil edir.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="socar6.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Etilen-Polietilen Zavodu</h5>
+        <p class="card-text">SOCAR-ın ən mühüm fəaliyyət istiqamətlərindən birini neft-kimya məhsullarının istehsalı və satışı təşkil edir. Şirkətin mühüm struktur vahidlərindən olan “Azərikimya” İstehsalat Birliyinin (İB) Etilen-Polietilen Zavodu ölkəmizin neft-kimya sənayesində böyük paya sahibdir.
+
+Ölkəmizdə kimya sənayesinin tarixi, əvvəllər “Ozer” adlanan, sonralar Sumqayıt Səthi Aktiv Maddələr Zavodu kimi tanınan ilk kimya müəssisənin birinci dəfə məhsul verdiyi tarixdən - 1945-ci ildən başlayır. O dövrün ən böyük neft-kimya müəssisəsi sayılan Sumqayıt Sintetik Kauçuk Zavodunun əsası isə 1950-ci ildə qoyulub. 1980-83-cü illərdə Cənubi Qafqazda ilk dəfə olaraq dənəvər superfosfat gübrələri istehsal edən yüksək məhsuldarlığa malik yeni texnoloji kompleks - Superfosfat Zavodu tikilib istifadəyə verilib.
+
+Ötən əsrin 70-80-ci illərində Ulu öndər Heydər Əliyevin qətiyyəti və prinsipiallığı sayəsində “EP-300” qurğusunun inşasına başlanılıb və bu unikal qurğu 1988-ci ildə istismara verilib. Yeni texnoloji kompleksin işə salınması ilə etilen, propilen, butilen-butadien fraksiyası, yüngül və ağır piroliz qətranı, propan kimi qiymətli kimyəvi məhsulların istehsalına başlanılıb. Bu kompleksin əsas xammalı Bakı Neft Emalı Zavodunun (indiki Heydər Əliyev adına NEZ) karbohidrogen məhsulları idi. “EP-300” kompleksinin texnoloji davamı olaraq yüksək təzyiqli polietilen istehsalı üçün nəzərdə tutulan “Polimir-120” qurğusunun da inşası məhz Heydər Əliyevin dəstəyi ilə mümkün olub. Avadanlığı Almaniya və o vaxtki Çexoslovakiyadan gətirilən, illik istehsal gücü 120 min ton polietilen olan həmin qurğunun işə salınması respublikamızda polimer məhsullarının – polimer boru və örtüklərin, müxtəlif məişət mallarının istehsalına da güclü təkan verib. 1994-cü ildə isə “EP-300” və “Polimir-120” qurğularının əsasında Etilen-Polietilen Zavodu yaradılıb. Etilen-Polietilen zavodunda modernizasiya və yenidənqurma layihələrinin icrasına başlanılanadək faktiki istehsal gücləri etilenə görə - 100-120 min ton/il, propilenə görə isə 90-100 min ton/il təşkil etmişdir.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="socar7.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Xidmətlər</h5>
+        <p class="card-text">SOCAR-ın “Kompleks qazma işləri” tresti (KQİT) 2007-ci ildən etibarən fəaliyyət göstərir. Əsas missiyası son elmi-texniki yeniliklərdən yararlanaraq, çoxillik sənaye təcrübəsini sifarişlərin yüksək keyfiyyətlə yerinə yetirilməsində tətbiq edərək Azərbaycan iqtisadiyyatına töhfə verməkdir. Fəaliyyəti dövründə təhlükəsizlik qaydalarına əməl etməklə, ətraf mühitə ziyan vurmadan dünya standartları səviyyəsində 1,7 milyon metrə yaxın qazma işlərinin aparılması müəssisənin əzmkar və peşəkar komandasının nailiyyəti kimi qiymətləndirilə bilər.
+
+KQİT fəaliyyəti dövründə ölkəmizin quru və dəniz əraziləri üzrə 30-a yaxın yataqda, o cümlədən “Bulla-Dəniz”, “Darvin Bankası”, “Neft Daşları”, “Günəşli”, “Qərbi Abşeron”, “Pirallahı adası”, “Siyəzən”, “Qaradağ” və başqa sahələrdə axtarış-kəşfiyyat və istismar qazma işlərini uğurla həyata keçirib, hazırda bu istiqamətdə işlər davam etdirilir.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container bg-dark text-light py-4" id="etraflı">
+        <div class="h1 text-center">Bizimlə Əlaqə</div>
+        <div class="map img-thumbnail">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.56092279301!2d49.82511747509557!3d40.418576755528356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087c1de200599%3A0x17d4c1f952a32884!2zODEgUWFyYSBRYXJheWV2IGvDvMOnyZlzaSwgQmFrxLE!5e0!3m2!1saz!2saz!4v1746210634437!5m2!1saz!2saz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container sosial mt-4">
+          <a href="https://wa.me/+994503237003">
+            <img src="wp.png" alt=""  class="sos">
+          </a>
+          <a href="https://youtube.com">
+            <img src="yt.png" alt=""  class="sos">
+          </a>
+          <a href="https://facebook.com">
+            <img src="fb.png" alt=""  class="sos">
+          </a>
+          <a href="https://instagram.com">
+            <img src="insta.png" alt=""  class="sos rounded">
+          </a>
+          <a href="tel:+994503237003">
+            <img src="phone.png" alt=""  class="sos">
+          </a>
+        </div>
+      </div>
+     <div class="footer bg-dark text-light p-1 text-center fixed-bottom">
+      <p>Design by Aliko &copy; </p>
+     </div>
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
